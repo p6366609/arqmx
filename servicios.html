@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARQMX.IO | Servicios</title>
+    <style>
+        :root { --accent: #00ffcc; --bg: #0a0a0a; }
+        body { font-family: 'Helvetica', sans-serif; background: var(--bg); color: #fff; margin: 0; }
+        nav { display: flex; justify-content: space-between; padding: 20px 5%; border-bottom: 1px solid #222; }
+        nav a { color: #888; text-decoration: none; margin-left: 20px; font-size: 0.8rem; letter-spacing: 2px; }
+        .container { padding: 80px 10%; }
+        .service-row { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-bottom: 60px; border-bottom: 1px solid #1a1a1a; padding-bottom: 40px; }
+        .number { color: var(--accent); font-weight: bold; font-size: 0.8rem; }
+        h3 { font-size: 1.8rem; margin: 10px 0; }
+        p { color: #777; line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" style="text-decoration:none; color:white; font-weight:bold; font-size:1.5rem;">ARQMX<span style="color:var(--accent)">.IO</span></a>
+        <div>
+            <a href="index.html">INICIO</a>
+            <a href="portafolio.html">PORTAFOLIO</a>
+            <a href="servicios.html" style="color:var(--accent)">SERVICIOS</a>
+            <a href="contacto.html">CONTACTO</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="service-row">
+            <div><span class="number">01</span><h3>PROYECTO EJECUTIVO</h3></div>
+            <div><p>Desarrollo completo de planos arquitectónicos, estructurales y de instalaciones para garantizar la correcta ejecución de la obra.</p></div>
+        </div>
+        <div class="service-row">
+            <div><span class="number">02</span><h3>VISUALIZACIÓN 3D</h3></div>
+            <div><p>Renders fotorealistas y recorridos virtuales que permiten previsualizar cada detalle antes de colocar el primer ladrillo.</p></div>
+        </div>
+        <div class="service-row">
+            <div><span class="number">03</span><h3>GESTIÓN DE OBRA</h3></div>
+            <div><p>Supervisión técnica en sitio para asegurar que el diseño se respete y los estándares de calidad sean máximos.</p></div>
+        </div>
+    </div>
+</body>
+</html>
