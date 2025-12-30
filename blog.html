@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARQMX.IO | Blog & YouTube</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #9b9b9b; --bg: #0f0f0f; --card: #1a1a1a; --tech-font: 'Space Mono', monospace; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: #fff; margin: 0; line-height: 1.6; }
+        
+        nav { display: flex; justify-content: space-between; padding: 25px 5%; border-bottom: 1px solid #252525; align-items: center; }
+        .logo { font-family: var(--tech-font); font-weight: bold; font-size: 1.4rem; letter-spacing: 2px; text-decoration: none; color: #fff; }
+        nav a { color: #666; text-decoration: none; margin-left: 20px; font-size: 0.75rem; letter-spacing: 2px; font-weight: 300; }
+        nav a:hover, nav a.active { color: #fff; }
+
+        .container { max-width: 1000px; margin: 60px auto; padding: 0 5%; }
+        .header-blog { margin-bottom: 50px; border-left: 3px solid var(--accent); padding-left: 20px; }
+        .header-blog h1 { font-size: 2.5rem; margin: 0; letter-spacing: -1px; }
+
+        /* LISTA DE POSTS */
+        .blog-grid { display: grid; grid-template-columns: 1fr; gap: 40px; }
+        .post-card { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; background: var(--card); border: 1px solid #222; padding: 20px; transition: 0.3s; align-items: center; }
+        .post-card:hover { border-color: #444; background: #222; }
+        
+        .post-video-thumb { width: 100%; aspect-ratio: 16/9; background: #000; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .post-video-thumb img { width: 100%; height: 100%; object-fit: cover; opacity: 0.7; }
+
+        .post-content h2 { margin: 0 0 10px 0; font-size: 1.5rem; color: #f0f0f0; }
+        .post-content p { color: #888; font-size: 0.95rem; margin-bottom: 20px; }
+        .post-meta { font-family: var(--tech-font); font-size: 0.7rem; color: var(--accent); text-transform: uppercase; }
+        
+        .btn-read { display: inline-block; padding: 10px 20px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-size: 0.8rem; font-family: var(--tech-font); }
+        .btn-read:hover { background: #fff; color: #000; border-color: #fff; }
+
+        @media (max-width: 768px) { .post-card { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">ARQMX.IO</a>
+        <div>
+            <a href="index.html">INICIO</a>
+            <a href="portafolio.html">PORTAFOLIO</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="blog.html" class="active">BLOG</a>
+            <a href="contacto.html">CONTACTO</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header-blog">
+            <h1>BITÁCORA <span style="color:var(--accent)">&</span> MEDIA</h1>
+            <p style="color:#666">Explorando la arquitectura a través de YouTube y artículos de diseño.</p>
+        </div>
+
+        <div class="blog-grid">
+            <article class="post-card">
+                <div class="post-video-thumb">
+                    <img src="https://img.youtube.com/vi/ID_DE_TU_VIDEO/maxresdefault.jpg" alt="Miniatura Video">
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">Video / Diciembre 2025</div>
+                    <h2>Mi proceso de Renderizado en 2025</h2>
+                    <p>Hoy les comparto las herramientas que utilizo para lograr fotorrealismo en menos tiempo. Desde la iluminación hasta el post-proceso...</p>
+                    <a href="https://www.youtube.com/@TuCanal" target="_blank" class="btn-read">VER EN YOUTUBE</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-video-thumb">
+                    <div style="color:#333; font-family:var(--tech-font)">[IMAGEN_ARTICULO]</div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">Artículo / Análisis</div>
+                    <h2>¿Por qué el concreto sigue siendo el rey?</h2>
+                    <p>Un análisis profundo sobre la materialidad en la arquitectura mexicana contemporánea y su impacto en la eficiencia energética.</p>
+                    <a href="#" class="btn-read">LEER MÁS</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 40px; color: #333; font-size: 0.7rem;">
+        ARQMX.IO &copy; 2025 | MÉXICO
+    </footer>
+
+</body>
+</html>
