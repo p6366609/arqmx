@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARQMX.IO | Servicios</title>
+    <title>ARQMX.IO | Servicios Especializados</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Space+Mono&display=swap" rel="stylesheet">
     <style>
         :root { --accent: #9b9b9b; --bg: #0f0f0f; --tech-font: 'Space Mono', monospace; }
         body { font-family: 'Inter', sans-serif; background: var(--bg); color: #fff; margin: 0; }
         nav { display: flex; justify-content: space-between; padding: 25px 5%; border-bottom: 1px solid #252525; align-items: center; }
-        .logo { font-family: var(--tech-font); font-weight: bold; font-size: 1.4rem; letter-spacing: 2px; text-decoration: none; color: #fff; }
-        nav a { color: #666; text-decoration: none; margin-left: 20px; font-size: 0.75rem; letter-spacing: 2px; font-weight: 300; }
-        nav a:hover, nav a.active { color: #fff; }
-        .container { padding: 80px 10%; }
-        .service-row { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-bottom: 60px; border-bottom: 1px solid #1a1a1a; padding-bottom: 40px; }
-        .number { color: var(--accent); font-family: var(--tech-font); font-size: 0.8rem; }
-        h3 { font-size: 1.8rem; margin: 10px 0; letter-spacing: -1px; }
-        p { color: #888; line-height: 1.8; font-weight: 300; }
-        @media (max-width: 768px) { .service-row { grid-template-columns: 1fr; gap: 20px; } }
+        .logo { font-family: var(--tech-font); font-weight: bold; font-size: 1.2rem; text-decoration: none; color: #fff; }
+        nav a { color: #666; text-decoration: none; margin-left: 20px; font-size: 0.7rem; letter-spacing: 2px; }
+        
+        .container { padding: 80px 10%; max-width: 1200px; margin: 0 auto; }
+        .grid-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        
+        .service-card { border: 1px solid #222; padding: 40px; background: #141414; transition: 0.3s; }
+        .service-card:hover { border-color: #fff; }
+        .service-card h3 { font-family: var(--tech-font); font-size: 1rem; color: #fff; margin-bottom: 20px; }
+        .service-card p { color: #888; font-size: 0.9rem; line-height: 1.6; }
+        .service-card ul { list-style: none; padding: 0; margin-top: 20px; }
+        .service-card ul li { color: #555; font-size: 0.75rem; margin-bottom: 8px; border-left: 1px solid #333; padding-left: 10px; }
+
+        .process-section { margin-top: 100px; border-top: 1px solid #222; padding-top: 60px; }
+        .process-title { font-family: var(--tech-font); font-size: 0.6rem; letter-spacing: 5px; color: #444; }
     </style>
 </head>
 <body>
@@ -26,16 +32,49 @@
         <div>
             <a href="index.html">INICIO</a>
             <a href="portafolio.html">PORTAFOLIO</a>
-            <a href="servicios.html" class="active" style="color:#fff">SERVICIOS</a>
+            <a href="servicios.html" style="color:#fff">SERVICIOS</a>
             <a href="blog.html">BLOG</a>
             <a href="contacto.html">CONTACTO</a>
         </div>
     </nav>
+
     <div class="container">
-        <div class="service-row">
-            <div><span class="number">01</span><h3>PROYECTO ARQUITECTÓNICO</h3></div>
-            <div><p>Desarrollo creativo y técnico de espacios. Desde el concepto inicial hasta los planos ejecutivos listos para construcción.</p></div>
+        <h1 style="font-size: 3rem; letter-spacing: -2px; margin-bottom: 60px;">SERVICIOS<br><span style="color:#333">SOLUCIONES TÉCNICAS.</span></h1>
+        
+        <div class="grid-services">
+            <div class="service-card">
+                <h3>[01] DISEÑO ARQUITECTÓNICO</h3>
+                <p>Desarrollo de proyectos desde el esquema básico hasta el anteproyecto.</p>
+                <ul>
+                    <li>+ Zonificación de espacios</li>
+                    <li>+ Análisis de sitio</li>
+                    <li>+ Planos arquitectónicos</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>[02] VISUALIZACIÓN AVANZADA</h3>
+                <p>Creación de imágenes fotorealistas para marketing y ventas.</p>
+                <ul>
+                    <li>+ Renders exteriores/interiores</li>
+                    <li>+ Recorridos virtuales</li>
+                    <li>+ Post-producción digital</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>[03] INGENIERÍA Y TRÁMITES</h3>
+                <p>Coordinación de ingenierías y documentación para licencias.</p>
+                <ul>
+                    <li>+ Cálculo estructural</li>
+                    <li>+ Instalaciones hidro-sanitarias</li>
+                    <li>+ Memoria descriptiva</li>
+                </ul>
+            </div>
         </div>
-        <div class="service-row">
-            <div><span class="number">02</span><h3>VISUALIZACIÓN 3D</h3></div>
-            <div><p
+
+        <div class="process-section">
+            <span class="process-title">WORKFLOW</span>
+            <p style="color:#444; font-size: 0.9rem; margin-top: 20px;">ENTREVISTA > CONCEPTO > DISEÑO > VISUALIZACIÓN > ENTREGA FINAL</p>
+        </div>
+    </div>
+</body>
+</html>
