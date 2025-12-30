@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARQMX.IO | Inicio</title>
+    <title>ARQMX.IO | Estudio de Arquitectura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Space+Mono&display=swap" rel="stylesheet">
     <style>
-        :root { --accent: #00ffcc; --bg: #0a0a0a; --card: #141414; }
-        body { font-family: 'Helvetica', sans-serif; background: var(--bg); color: #fff; margin: 0; }
-        nav { display: flex; justify-content: space-between; padding: 20px 5%; border-bottom: 1px solid #222; align-items: center; }
-        nav a { color: #888; text-decoration: none; margin-left: 20px; font-size: 0.8rem; letter-spacing: 2px; transition: 0.3s; }
-        nav a:hover, nav a.active { color: var(--accent); }
-        .logo { font-weight: bold; font-size: 1.5rem; letter-spacing: -1px; color: #fff; }
-        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 10%; }
-        h1 { font-size: 4rem; margin: 0; letter-spacing: -2px; }
-        .hero p { color: #666; max-width: 600px; margin-top: 20px; font-size: 1.1rem; }
-        .btn { margin-top: 30px; padding: 15px 40px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; transition: 0.3s; }
-        .btn:hover { background: var(--accent); color: #000; }
-        footer { padding: 40px; text-align: center; color: #333; font-size: 0.7rem; letter-spacing: 2px; }
+        :root { --accent: #9b9b9b; --bg: #121212; --text: #f0f0f0; --tech-font: 'Space Mono', monospace; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; }
+        nav { display: flex; justify-content: space-between; padding: 25px 5%; border-bottom: 1px solid #252525; align-items: center; }
+        .logo { font-family: var(--tech-font); font-weight: bold; font-size: 1.4rem; letter-spacing: 2px; }
+        nav a { color: #666; text-decoration: none; margin-left: 25px; font-size: 0.75rem; letter-spacing: 2px; transition: 0.3s; font-weight: 300; }
+        nav a:hover, nav a.active { color: #fff; border-bottom: 1px solid #fff; }
+        
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 0 10%; background: linear-gradient(rgba(18,18,18,0.8), rgba(18,18,18,0.8)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1500&q=80') center/cover; }
+        h1 { font-size: 4.5rem; margin: 0; line-height: 0.9; letter-spacing: -3px; font-weight: 700; }
+        .hero p { color: #888; max-width: 500px; margin-top: 30px; font-size: 1rem; border-left: 2px solid var(--accent); padding-left: 20px; }
+        
+        .social-footer { padding: 40px; text-align: center; border-top: 1px solid #252525; margin-top: 50px; }
+        .social-links a { color: var(--accent); text-decoration: none; margin: 0 15px; font-size: 0.8rem; font-family: var(--tech-font); }
+        .social-links a:hover { color: #fff; }
     </style>
 </head>
 <body>
     <nav>
-        <div class="logo">ARQMX<span style="color:var(--accent)">.IO</span></div>
+        <div class="logo">ARQMX.IO</div>
         <div>
             <a href="index.html" class="active">INICIO</a>
             <a href="portafolio.html">PORTAFOLIO</a>
@@ -30,10 +33,16 @@
         </div>
     </nav>
     <section class="hero">
-        <h1>DISEÑO QUE <br> <span style="color:var(--accent)">CONSTRUYE FUTURO.</span></h1>
-        <p>Estudio de arquitectura enfocado en la síntesis de forma, función y tecnología. Creamos espacios que trascienden lo convencional.</p>
-        <a href="portafolio.html" class="btn">VER PROYECTOS</a>
+        <h1>PROYECTAR<br>LA MATERIA.</h1>
+        <p>Soluciones arquitectónicas integrales desde la concepción hasta la materialización técnica. ARQMX combina precisión y diseño.</p>
     </section>
-    <footer>ARQMX.IO &copy; 2025 | MÉXICO</footer>
+    <footer class="social-footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61581126082365" target="_blank">FACEBOOK</a>
+            <a href="https://wa.me/525617747188" target="_blank">WHATSAPP</a>
+            <a href="mailto:p6366609@gmail.com">EMAIL</a>
+        </div>
+        <p style="font-size: 0.6rem; color: #444; margin-top: 20px; letter-spacing: 3px;">ARQMX.IO &copy; 2025</p>
+    </footer>
 </body>
 </html>
