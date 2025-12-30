@@ -4,32 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARQMX.IO | Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Space+Mono&display=swap" rel="stylesheet">
     <style>
-        :root { --accent: #00ffcc; --bg: #0a0a0a; }
-        body { font-family: 'Helvetica', sans-serif; background: var(--bg); color: #fff; margin: 0; }
-        nav { display: flex; justify-content: space-between; padding: 20px 5%; border-bottom: 1px solid #222; }
-        nav a { color: #888; text-decoration: none; margin-left: 20px; font-size: 0.8rem; letter-spacing: 2px; }
-        .container { padding: 100px 5%; text-align: center; }
-        h2 { font-size: 3rem; margin-bottom: 10px; }
-        .mail { font-size: 2rem; color: var(--accent); text-decoration: none; border-bottom: 2px solid var(--accent); }
-        .info { margin-top: 50px; color: #555; text-transform: uppercase; letter-spacing: 4px; }
+        body { font-family: 'Inter', sans-serif; background: #0f0f0f; color: #fff; margin: 0; }
+        nav { display: flex; justify-content: space-between; padding: 25px 5%; border-bottom: 1px solid #252525; }
+        nav a { color: #666; text-decoration: none; margin-left: 25px; font-size: 0.75rem; letter-spacing: 2px; }
+        .container { padding: 100px 10%; max-width: 800px; }
+        h2 { font-size: 3rem; letter-spacing: -2px; }
+        .contact-item { margin-bottom: 40px; }
+        .label { font-family: 'Space Mono', monospace; color: #444; font-size: 0.7rem; text-transform: uppercase; display: block; margin-bottom: 10px; }
+        .data { font-size: 1.5rem; color: #f0f0f0; text-decoration: none; transition: 0.3s; }
+        .data:hover { color: #9b9b9b; }
+        .btn-wa { display: inline-block; background: #fff; color: #000; padding: 15px 30px; text-decoration: none; margin-top: 20px; font-weight: bold; font-size: 0.8rem; }
     </style>
 </head>
 <body>
     <nav>
-        <a href="index.html" style="text-decoration:none; color:white; font-weight:bold; font-size:1.5rem;">ARQMX<span style="color:var(--accent)">.IO</span></a>
+        <div style="font-family: 'Space Mono'; font-weight: bold;">ARQMX.IO</div>
         <div>
             <a href="index.html">INICIO</a>
             <a href="portafolio.html">PORTAFOLIO</a>
             <a href="servicios.html">SERVICIOS</a>
-            <a href="contacto.html" style="color:var(--accent)">CONTACTO</a>
+            <a href="contacto.html" style="color:#fff">CONTACTO</a>
         </div>
     </nav>
     <div class="container">
-        <h2>¿TIENES UN PROYECTO?</h2>
-        <p style="color:#666; margin-bottom:50px;">Hablemos sobre tu próxima construcción.</p>
-        <a href="mailto:tu-correo@ejemplo.com" class="mail">HOLA@ARQMX.IO</a>
-        <div class="info">MÉXICO CITY | +52 1 00 0000 0000</div>
+        <h2>INICIEMOS<br>LA OBRA.</h2>
+        <div class="contact-item">
+            <span class="label">Correo Electrónico</span>
+            <a href="mailto:p6366609@gmail.com" class="data">p6366609@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <span class="label">WhatsApp Directo</span>
+            <a href="https://wa.me/525617747188" class="data">+52 56 1774 7188</a>
+        </div>
+        <div class="contact-item">
+            <span class="label">Redes Sociales</span>
+            <a href="https://www.facebook.com/profile.php?id=61581126082365" class="data">Facebook / ARQMX</a>
+        </div>
+        <a href="https://wa.me/525617747188" class="btn-wa">ENVIAR MENSAJE AHORA</a>
     </div>
 </body>
 </html>
