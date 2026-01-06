@@ -14,9 +14,9 @@
         .container { padding: 60px 10%; max-width: 800px; margin: auto; }
         h2 { font-size: 2.5rem; letter-spacing: -1px; margin-bottom: 30px; }
         form { display: flex; flex-direction: column; gap: 15px; max-width: 450px; }
-        input, textarea { background: #111; border: 1px solid #333; padding: 15px; color: #fff; font-family: inherit; }
-        button { background: #fff; color: #000; padding: 15px; border: none; font-weight: bold; cursor: pointer; font-family: var(--tech-font); }
-        button:hover { background: #ccc; }
+        input, textarea { background: #111; border: 1px solid #333; padding: 15px; color: #fff; font-family: inherit; font-size: 1rem; }
+        button { background: #fff; color: #000; padding: 15px; border: none; font-weight: bold; cursor: pointer; font-family: var(--tech-font); margin-top: 10px; }
+        button:hover { background: var(--accent); }
     </style>
 </head>
 <body>
@@ -30,10 +30,12 @@
     <div class="container">
         <h2>VAMOS A CONSTRUIR.</h2>
 
-        <form action="https://formspree.io/f/mqpkvpzk" method="POST">
-            <input type="text" name="name" placeholder="Tu Nombre" required>
+        <form action="https://formspree.io/f/maqngrnp" method="POST">
+            <input type="text" name="nombre" placeholder="Tu Nombre" required>
             <input type="email" name="email" placeholder="Tu Correo" required>
-            <textarea name="message" placeholder="Háblanos de tu proyecto" rows="5" required></textarea>
+            <textarea name="mensaje" placeholder="Háblanos de tu proyecto" rows="5" required></textarea>
+            
+            <input type="hidden" name="_next" value="https://arqmx.github.io/arqmx/contacto.html">
             
             <button type="submit">ENVIAR SOLICITUD</button>
         </form>
