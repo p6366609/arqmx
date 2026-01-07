@@ -1,95 +1,29 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARQMX.IO | Blog Técnica</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Space+Mono&display=swap" rel="stylesheet">
-    <style>
-        :root { --accent: #9b9b9b; --bg: #0f0f0f; --card: #161616; --tech-font: 'Space Mono', monospace; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg); color: #fff; margin: 0; }
-        
-        nav { display: flex; justify-content: space-between; padding: 25px 5%; border-bottom: 1px solid #252525; align-items: center; background: #000; }
-        .logo { font-family: var(--tech-font); font-weight: bold; font-size: 1.2rem; letter-spacing: 2px; text-decoration: none; color: #fff; }
-        nav a { color: #666; text-decoration: none; margin-left: 20px; font-size: 0.7rem; letter-spacing: 2px; }
-        nav a.active { color: #fff; }
+<h1>Introducción a la Arquitectura Moderna</h1>
 
-        .admin-bar { background: #1a1a1a; padding: 10px 5%; display: flex; gap: 20px; border-bottom: 1px solid #333; font-family: var(--tech-font); font-size: 0.7rem; color: #666; }
-        .add-file-btn { background: #333; color: #fff; padding: 5px 15px; border-radius: 4px; text-decoration: none; }
+La arquitectura moderna es un estilo de diseño que busca equilibrar la función y la estética en las estructuras arquitectónicas. Aunque se desarrolló en el siglo XX, su influencia puede ser vista en construcciones actuales.
 
-        .container { max-width: 1000px; margin: 40px auto; padding: 0 5%; }
-        .section-header { border-left: 2px solid #333; padding-left: 20px; margin-bottom: 40px; }
-        .section-header h1 { font-size: 1.5rem; font-family: var(--tech-font); font-weight: 300; color: var(--accent); }
+<h2>Orígenes y Características</h2>
 
-        /* ESTILO LISTA BLOG */
-        .blog-list { border: 1px solid #222; border-radius: 4px; overflow: hidden; }
-        .blog-item { display: grid; grid-template-columns: 100px 1fr 150px; padding: 20px; border-bottom: 1px solid #222; background: var(--card); transition: 0.3s; align-items: center; }
-        .blog-item:hover { background: #1d1d1d; }
-        
-        .blog-thumb { width: 70px; height: 70px; background: #000; display: flex; align-items: center; justify-content: center; border: 1px solid #333; }
-        .blog-thumb img { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
-        
-        .blog-info h2 { margin: 0; font-size: 1.1rem; letter-spacing: -0.5px; }
-        .blog-info p { margin: 5px 0 0; color: #666; font-size: 0.85rem; }
-        
-        .blog-meta { font-family: var(--tech-font); font-size: 0.65rem; color: #444; text-align: right; }
-        .btn-yt { color: #f00; text-decoration: none; display: block; margin-top: 5px; }
+La arquitectura moderna tiene sus raíces en el movimiento artístico de la vanguardia, que buscaba romper con las convenciones estéticas tradicionales. Algunas de las características más destacadas de esta arquitectura son:
 
-        @media (max-width: 768px) {
-            .blog-item { grid-template-columns: 1fr; gap: 15px; text-align: left; }
-            .blog-meta { text-align: left; }
-        }
-    </style>
-</head>
-<body>
+- **Uso de materiales innovadores**: La arquitectura moderna se caracteriza por el uso de materiales nuevos y tecnológicos, como el acero, el vidrio y los sistemas de estructura en forma de tubo.
+- **Simplificación geométrica**: La forma geométrica simple y regular es un elemento clave en la arquitectura moderna. Esto se debe a que permite una mayor eficiencia y funcionalidad en las estructuras.
+- **Enfoque en la luz y el aire**: La iluminación natural y el uso de ventanas grandes son elementos importantes en la arquitectura moderna, ya que permiten la conexión con el exterior y la creación de espacios aéreos.
 
-    <nav>
-        <a href="index.html" class="logo">ARQMX.IO</a>
-        <div>
-            <a href="index.html">INICIO</a>
-            <a href="portafolio.html">PORTAFOLIO</a>
-            <a href="servicios.html">SERVICIOS</a>
-            <a href="blog.html" class="active">BLOG</a>
-            <a href="contacto.html">CONTACTO</a>
-        </div>
-    </nav>
+<h2>Influencias Culturales y Artísticas</h2>
 
-    <div class="admin-bar">
-        <span>root / arqmx / contents / </span>
-        <a href="https://www.youtube.com/@TuCanal" class="add-file-btn">+ Add content</a>
-    </div>
+La arquitectura moderna ha sido influenciada por diversas corrientes culturales y artísticas. Algunas de las más destacadas son:
 
-    <div class="container">
-        <div class="section-header">
-            <h1>BITÁCORA DE PROYECTOS <span style="color:#333">//</span> MEDIA</h1>
-        </div>
+- **El Bauhaus**: Este movimiento alemán, que se centró en la intersección entre arte, diseño y arquitectura, tuvo una gran influencia en la arquitectura moderna.
+- **La Escuela de Chicago**: Esta escuela de pensamiento arquitectónico, fundada en el siglo XX, se enfocaba en la creación de estructuras sencillas y funcionales.
 
-        <div class="blog-list">
-            <div class="blog-item">
-                <div class="blog-thumb"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/default.jpg"></div>
-                <div class="blog-info">
-                    <h2>01. Análisis de Materiales: Concreto Aparente</h2>
-                    <p>Explorando la textura y durabilidad en obra residencial.</p>
-                </div>
-                <div class="blog-meta">
-                    <span>DEC 2025</span>
-                    <a href="#" class="btn-yt">YOUTUBE_LINK</a>
-                </div>
-            </div>
+<h2>Desafíos y Críticas</h2>
 
-            <div class="blog-item">
-                <div class="blog-thumb"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/default.jpg"></div>
-                <div class="blog-info">
-                    <h2>02. Tutorial: Configuración de Luces en V-Ray</h2>
-                    <p>Mi flujo de trabajo para renders de interiores nocturnos.</p>
-                </div>
-                <div class="blog-meta">
-                    <span>NOV 2025</span>
-                    <a href="#" class="btn-yt">YOUTUBE_LINK</a>
-                </div>
-            </div>
-        </div>
-    </div>
+Aunque la arquitectura moderna ha sido muy influyente, también ha enfrentado críticas y desafíos. Algunas de las más destacadas son:
 
-</body>
-</html>
+- **Falta de identidad cultural**: La arquitectura moderna ha sido criticada por carecer de una identidad cultural clara, lo que la hace menos atractiva para algunos.
+- **Uso excesivo de materiales**: El uso excesivo de materiales y tecnología en la arquitectura moderna ha generado críticas sobre su impacto ambiental.
+
+<h2>Conclusión</h2>
+
+La arquitectura moderna es un estilo de diseño que busca equilibrar la función y la estética. Aunque ha enfrentado críticas, sigue siendo una influencia importante en la arquitectura contemporánea. Su uso innovador de materiales y su enfoque en la luz y el aire lo han convertido en un estilo que sigue siendo relevante en la actualidad.
